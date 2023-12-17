@@ -42,6 +42,10 @@ Links to an external site.-  Links to an external site.Links to an external site
 
 - Execute each function in the console for the respective challenge.
 
+### Author and License
+
+Steven Mungai 
+
 ### Repository Link
 
 https://github.com/MungaiS/Toy-problem.git
