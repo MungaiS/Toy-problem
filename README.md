@@ -1,6 +1,6 @@
-# Week 1 Toy Problems
+# Topic : Week 1 Toy Problems
 
-This repository contains JavaScript solutions for three toy problems.
+This repository contains JavaScript solutions for three code challenge problems.
 
 ## Challenge 1: Student Grade Generator
 
@@ -41,10 +41,6 @@ Links to an external site.-  Links to an external site.Links to an external site
 ### Usage
 
 - Execute each function in the console for the respective challenge.
-
-### Author and License
-
-Steven Mungai 
 
 ### Repository Link
 
