@@ -1,3 +1,4 @@
+// Creating a function called calculateDemeritPoints
 function calculateDemeritPoints(speed) {
   const speedLimit = 70;
   let demeritPoints = 0;
@@ -8,7 +9,7 @@ function calculateDemeritPoints(speed) {
 
   return demeritPoints;
 }
-
+// Convertthr speed into integers using ParseInt
 function main() {
   const speed = parseInt(prompt("Enter the speed of the car (in km/h):"));
 

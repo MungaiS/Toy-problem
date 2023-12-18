@@ -1,11 +1,13 @@
+// Creating a function called calculateNetSalary 
+
 function calculateNetSalary(basicSalary, benefits) {
-  
+  // create objects with tht tax and nhif rate
   const taxRate = [
-    { min: 0, max: 24000, rate: 10 },
-    { min: 24001, max: 32333, rate: 15 },
-    { min: 32334, max: 40385, rate: 20 },
-    { min: 40386, max: 48336, rate: 25 },
-    { min: 48337, max: Infinity, rate: 30 }
+    { min: 0, max: 24000, rate: 0.10 },
+    { min: 24001, max: 32333, rate: 0.15 },
+    { min: 32334, max: 40385, rate: 0.20 },
+    { min: 40386, max: 48336, rate: 0.25 },
+    { min: 48337, max: Infinity, rate: 0.30 }
   ]
   const nhifRate = [
     { min: 0, max: 5999, deduction: 150 },
@@ -23,16 +25,16 @@ function calculateNetSalary(basicSalary, benefits) {
   ]
   const nssfRate = 0.06
 
+  const housingRate = 0.015
   
   const grossSalary = basicSalary + benefits;
 
   
   const tax = grossSalary * taxRate;
-  const nhif = grossSalary * nhifRate;
   const nssf = grossSalary * nssfRate;
-
+  const housing = grossSalary * housingRate 
   
-  const netSalary = grossSalary - (tax + nhif + nssf);
+  const netSalary = grossSalary - (tax + nhifRate + nssf + housing);
 
   return {
     grossSalary,
@@ -43,7 +45,7 @@ function calculateNetSalary(basicSalary, benefits) {
   };
 }
 
-
+// Print the results
 const basicSalary = 59000; 
 const benefits =4500; 
 const result = calculateNetSalary(basicSalary, benefits);
