@@ -38,9 +38,9 @@ Links to an external site.-  Links to an external site.Links to an external site
 - Input: Basic salary and benefits
 - Output: Gross salary, payee, NHIF deduction, NSSF deduction, net salary
 
-### Usage
+### Author
 
-- Execute each function in the console for the respective challenge.
+Steven Mungai
 
 ### Repository Link
 
